@@ -6,11 +6,6 @@ import {Link} from 'react-router-dom'
 
 
 function SidebarChat({ id, name, addNewChat }) {
-  const [seed, setSeed] = useState("");
-
-  useEffect(() => {
-    setSeed(Math.floor(Math.random() * 5000));
-  }, []);
 
   const createChat = () => {
     const roomName = prompt("Please enter a name for the chat room");
